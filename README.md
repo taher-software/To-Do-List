@@ -1,21 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet) 
 
-# Capstone project 1 : Web developement course app 
-For this project, I've created simple responsive site for a CMS developement course. Thus, I created home and about page with html and css. I've created menu and speakers section using javascript. I think that this work can be very useful either for someone who want to hold a confernce or a course web site, or web developement practioner.
+# To Do List 
+"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I will build a simple website that allows for doing that, and I  will do it using ES6 and Webpack!
 
-![home_page](https://github.com/Taher-web-dev/Web-dev-course-app/blob/create-home_page-about-page/statics/images/overview.png)
+![home_page](https://github.com/Taher-web-dev/To-Do-List/blob/list-structure/src/assets/Images/to-do-list.png)
 
 ## Built With 🔨
 
 - HTML
 - CSS
 - Git & Github
-- Bootstrap
+- Webpack
 - Jvascript
 
 ## Live Demo
 
-[Live Demo Link](https://taher-web-dev.github.io/Web-dev-course-app/)
+[Live Demo Link](https://taher-web-dev.github.io/To-Do-List/)
 
 ### Install
 
@@ -24,16 +24,16 @@ To get a local copy up and running follow these simple example steps.
 - Clone this project by the command: 
 
 ```
-$ git clone git@github.com:Taher-web-dev/Web-dev-course-app.git
+$ git clone git@github.com:Taher-web-dev/To-Do-List.git
 ```
 
 - Then go to the main folder using the next command:
 
 ```
-$ cd Web-dev-course-app/
+$ cd To-Do-List/
 ```
 
-- Finally, run display the index.html file in your local browser, or also, you can use Live Server in Visual Studio Code.
+- Finally, run <b> npm start </b> in your console, or also, you can use Live Server in Visual Studio Code.
 
 
 
@@ -46,7 +46,7 @@ $ cd Web-dev-course-app/
 ### Usage
 
 - Web developement practioner
-- For anyone who wants to create a site for his web developement course.
+- For anyone who wants to create a site his daily to do list.
 
 
 ## Authors
@@ -69,7 +69,6 @@ Give a ⭐️ if you like this project!
 
 
 ## Acknowledgments
-- Original design idea by : Cindy Shin  💘 (https://www.behance.net/adagio07)
 - Microverse program ⚡
 - My standup team 🏹
 - My family's support 🙌
