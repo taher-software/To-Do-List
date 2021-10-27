@@ -53,6 +53,6 @@ populateTask(toDoTasks);
 clearButton.innerHTML = '<p>Clear all completed</p>';
 clearButton.className = 'clear-button';
 nbrGrid += 1;
-clearButton.style.gridRow = `${nbrGrid} \ span 1`;
+clearButton.style.gridRow = `${nbrGrid} / span 1`;
 placeholder.style.gridTemplateRows = nbrGrid;
 placeholder.appendChild(clearButton);

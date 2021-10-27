@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
@@ -23,17 +22,9 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(jpg|png|svg)$/,
-        use: {
-          loader: 'url-loader',
-        },
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
-  },
-  /* resolve: {
-      fallback: {
-        util: require.resolve("util/"),
-        "os": require.resolve("os-browserify/browser"),
-      }
-  } */
+  },	
 };
