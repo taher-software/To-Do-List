@@ -30,7 +30,7 @@ const clearButton = document.createElement('div');
 const populateTask = (tasks) => {
   tasks.forEach((element) => {
     const newElement = document.createElement('div');
-    newElement.innerHTML = `<div><img src =${SQUARE} class= 'selection-icon'> <p class='task-description'> ${element.description}</p> </div><img src=${THREE} class='edit'>`;
+    newElement.innerHTML = `<div><input type='checkbox' class= 'selection-icon'> <p class='task-description'> ${element.description}</p> </div><img src=${THREE} class='edit'>`;
     newElement.style.gridRow = `${element.index + 2} / span 1`;
     newElement.className = 'task-card';
     nbrGrid += 1;
