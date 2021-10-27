@@ -3,7 +3,7 @@
 # To Do List 
 "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I will build a simple website that allows for doing that, and I  will do it using ES6 and Webpack!
 
-![home_page](https://github.com/Taher-web-dev/Web-dev-course-app/blob/create-home_page-about-page/statics/images/overview.png)
+![home_page](https://github.com/Taher-web-dev/To-Do-List/blob/list-structure/src/assets/Images/to-do-list.png)
 
 ## Built With 🔨
 
