@@ -4,7 +4,9 @@ import './style.css';
 import RETURN from './assets/Images/return.png';
 import REFRESH from './assets/Images/refresh.png';
 import THREE from './assets/Images/three-points.png';
+/* eslint-disable */
 import * as status from './status.js';
+/* eslint-disable */
 /* declarate variables */
 let toDoTasks = [
   {
@@ -26,12 +28,11 @@ let toDoTasks = [
 const placeholder = document.querySelector('.container');
 let nbrGrid = 2;
 const clearButton = document.createElement('div');
-/* local storage */ 
+/* local storage */
 if (!localStorage.getItem('toDoTasks')) {
-  localStorage.setItem('toDoTasks',JSON.stringify(toDoTasks));
-}
-else {
-    toDoTasks = JSON.parse(localStorage.getItem('toDoTasks'));
+  localStorage.setItem('toDoTasks', JSON.stringify(toDoTasks));
+} else {
+  toDoTasks = JSON.parse(localStorage.getItem('toDoTasks'));
 }
 /* utilities */
 const populateTask = (tasks) => {
@@ -39,9 +40,8 @@ const populateTask = (tasks) => {
     const newElement = document.createElement('div');
     if (!element.completed) {
       newElement.innerHTML = `<div><input type='checkbox' class= 'selection-icon'> <p class='task-description'> ${element.description}</p> </div><img src=${THREE} class='edit'>`;
-    }
-    else {
-        newElement.innerHTML = `<div><input type='checkbox' class= 'selection-icon' checked> <p class='task-description'> ${element.description}</p> </div><img src=${THREE} class='edit'>`; 
+    } else {
+      newElement.innerHTML = `<div><input type='checkbox' class= 'selection-icon' checked> <p class='task-description'> ${element.description}</p> </div><img src=${THREE} class='edit'>`;
     }
     newElement.style.gridRow = `${element.index + 2} / span 1`;
     newElement.className = 'task-card';
@@ -51,16 +51,15 @@ const populateTask = (tasks) => {
     checkboxInput.addEventListener('change', () => {
       if (element.completed) {
         element.completed = false;
-        localStorage.setItem('toDoTasks',JSON.stringify(toDoTasks));
-        }
-      else {
+        localStorage.setItem('toDoTasks', JSON.stringify(toDoTasks));
+      } else {
         element.completed = true;
-        localStorage.setItem('toDoTasks',JSON.stringify(toDoTasks));
+        localStorage.setItem('toDoTasks', JSON.stringify(toDoTasks));
       }
     });
     placeholder.style.gridTemplateRows = `${nbrGrid}`;
   });
-}
+};
 /* Load Page */
 const titleList = document.createElement('div');
 titleList.innerHTML = `<p class='description'>Today's To Do </p> <img src=${REFRESH} class='icon'>`;
@@ -79,4 +78,3 @@ nbrGrid += 1;
 clearButton.style.gridRow = `${nbrGrid} / span 1`;
 placeholder.style.gridTemplateRows = nbrGrid;
 placeholder.appendChild(clearButton);
-
