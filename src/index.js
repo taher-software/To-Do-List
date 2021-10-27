@@ -2,7 +2,6 @@
 import './style.css';
 /* import REFRESH from './assets/Images/refresh.svg'; */
 import RETURN from './assets/Images/return.png';
-import SQUARE from './assets/Images/square.png';
 import REFRESH from './assets/Images/refresh.png';
 import THREE from './assets/Images/three-points.png';
 /* declarate variables */

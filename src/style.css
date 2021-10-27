@@ -8,7 +8,7 @@ body {
   margin-top: 10%;
   display: grid;
   position: relative;
-  z-index: "999";
+  z-index: 999;
 }
 
 .fix-card {
