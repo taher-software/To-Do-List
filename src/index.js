@@ -4,9 +4,7 @@ import './style.css';
 import RETURN from './assets/Images/return.png';
 import REFRESH from './assets/Images/refresh.png';
 import THREE from './assets/Images/three-points.png';
-/* eslint-disable */
-import * as status from './status.js';
-/* eslint-disable */
+import change from './status.js';
 /* declarate variables */
 let toDoTasks = [
   {
@@ -48,14 +46,8 @@ const populateTask = (tasks) => {
     nbrGrid += 1;
     placeholder.appendChild(newElement);
     const checkboxInput = newElement.querySelector('.selection-icon');
-    checkboxInput.addEventListener('change', () => {
-      if (element.completed) {
-        element.completed = false;
-        localStorage.setItem('toDoTasks', JSON.stringify(toDoTasks));
-      } else {
-        element.completed = true;
-        localStorage.setItem('toDoTasks', JSON.stringify(toDoTasks));
-      }
+    checkboxInput.addEventListener('change', (e) => {
+      change(e, toDoTasks);
     });
     placeholder.style.gridTemplateRows = `${nbrGrid}`;
   });
