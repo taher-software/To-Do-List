@@ -15,9 +15,9 @@ body {
   width: 100%;
   display: flex;
   background-color: white;
-  border-bottom: 2px solid rgb(246, 246, 246);
+  border: 2px solid rgb(246, 246, 246);
   justify-content: space-between;
-  height: 35px;
+  height: 100%;
   align-items: center;
 }
 
@@ -25,7 +25,16 @@ body {
   height: 100%;
   border: none;
   margin-left: 2.5%;
+  font-style: italic;
+  font-family: sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+  width: 50%;
+  color: rgb(37, 37, 37);
+  font-size: 14px;
 }
+
+.fix-card input:focus { outline: none; }
 
 .icon {
   margin-right: 2.5%;
@@ -49,8 +58,8 @@ body {
   width: 100%;
   display: flex;
   background-color: white;
-  border-bottom: 2px solid rgb(246, 246, 246);
-  height: 35px;
+  border: 2px solid rgb(246, 246, 246);
+  height: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -84,3 +93,15 @@ body {
   border-bottom: 2px solid rgb(218, 218, 218);
   color: rgb(137, 137, 137);
 }
+
+.edit-task {
+  height: 80%;
+  border: none;
+  margin-left: 2.5%;
+  width: 50%;
+  color: rgb(67, 67, 67);
+}
+
+.edit-task:focus { outline: none; }
+
+.del { margin-right: 2.5%; }

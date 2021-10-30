@@ -13,10 +13,6 @@
 - Webpack
 - Jvascript
 
-## Live Demo
-
-[Live Demo Link](https://taher-web-dev.github.io/To-Do-List/)
-
 ### Install
 
 To get a local copy up and running follow these simple example steps.
@@ -33,8 +29,7 @@ $ git clone git@github.com:Taher-web-dev/To-Do-List.git
 $ cd To-Do-List/
 ```
 
-- Finally, run <b> npm start </b> in your console, or also, you can use Live Server in Visual Studio Code.
-
+- Finally, install npm , then run <b> npm start </b> in your console.
 
 
 ### Prerequisites
