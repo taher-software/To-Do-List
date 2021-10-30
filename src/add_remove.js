@@ -19,17 +19,12 @@ const addTask = (toDoTasks, taskdescription, nbrGrid, eddList) => {
     index: newIndex,
   });
   eddList.push(newElt.querySelector('.edit'));
-
-  /* newElt.querySelector('.edit').onclick = (e) => {
-        [nbrOfGrid,deList] = editTask(e,toDoTasks,nbrOfGrid,deList);
-    } */
   newElt.querySelector('.selection-icon').onchange = (e) => {
     change(e, toDoTasks);
   };
   return [nbrOfGrid, eddList, toDoTasks];
 };
 const clickTask = (e, toDoTasks, nbrGrid, eddList) => {
-  /* const toDoTasks = JSON.parse(localStorage.getItem('toDoTasks')); */
   const taskdescription = e.target.value;
   e.target.value = '';
   const [nbrOfGrid, edd, newList] = addTask(toDoTasks, taskdescription, nbrGrid, eddList);
@@ -123,6 +118,7 @@ const clear = (storageFct) => {
   const btn = container.querySelector('.clear-button');
   btn.style.gridRow = `${containerNbrGrid} / span 1`;
   localStorage.setItem('toDoTasks', JSON.stringify(newTaskList));
+  window.location.reload(true);
 
   return containerNbrGrid;
 };
